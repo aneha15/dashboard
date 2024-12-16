@@ -2,7 +2,7 @@ html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 20px;
+    font-size: 22px;
     /* height: 100% */
 }
 
@@ -14,16 +14,20 @@ p {
     display: grid;
     grid-template-columns: 1fr 4fr;
     /* grid-template-rows:  1fr 6fr; */
-    border: 5px solid greenyellow;
+    /* border: 5px solid greenyellow; */
     /* height: 100%; */
 }
 
 .container > * {
-    border: 5px solid paleturquoise;
+    /* border: 5px solid paleturquoise; */
 }
 
 .header {
+    padding: 25px;
     grid-column: 2;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    background-color: #faf5ff;
 }
 
 .sidebar {
@@ -34,9 +38,11 @@ p {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    border: 3px solid turquoise;
+    /* border: 3px solid turquoise; */
     gap: 65px;
     padding: 20px;
+    /* background-color: #f3e8ff; */
+    background-color: #d8b4fe;
 }
 
 .sidebar > * {
@@ -45,15 +51,36 @@ p {
     gap: 15px;
 }
 
-.header {
-    display: grid;
-    grid-template-rows: 1fr 2fr;
-}
-
-.header > * {
+.header > .top {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.header > .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header > .bottom > .buttons {
+    display: flex;
+    gap: 25px;
+}
+
+.buttons > * {
+    border: none;
+    background: none;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #e9d5ff;
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+button:hover {
+    opacity: 75%;
 }
 
 .maincontent {
@@ -62,10 +89,11 @@ p {
     grid-template-columns: 3fr 1fr;
     gap: 15px;
     padding: 25px 15px;
+    background-color: #e9d5ff;
 }
 
 .maincontent > * {
-    border: 5px solid gray;
+    /* border: 5px solid gray; */
 }
 
 .project-container {
@@ -79,9 +107,21 @@ p {
     gap: 15px;
 }
 
-.cards > * {
-    border: 3px dashed palegreen;
+.project-container .cards > * {
+    /* border: 3px dashed palegreen; */
     height: 250px;
+    background-color: #faf5ff;
+    border-radius: 10px;
 }
 
+.search {
+    width: 60%;
+}
 
+.search > input {
+    width: 100%;
+    height: 25px;
+    border-radius: 10px;
+    font-size: 18px;
+    background-color: #e9d5ff;
+}
