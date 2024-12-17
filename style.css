@@ -24,8 +24,8 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    padding-top: 25px;
     gap: 65px;
-    padding: 20px;
     background-color: #d8b4fe;
 }
 
@@ -33,7 +33,13 @@ h4 {
     margin-bottom: 3px;
 }
 
-.sidebar > * {
+/* .sidebar > * {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+} */
+
+.sidebar > *:not(:nth-child(1)) {
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -58,17 +64,18 @@ h4 {
 
 .buttons > * {
     border: none;
-    background: none;
     font-size: 18px;
     cursor: pointer;
     background-color: #d8b4fe;
     width: 120px;
     height: 40px;
     border-radius: 20px;
+    color: #faf5ff;
+    font-weight: 700;
 }
 
 button:hover {
-    background-color: #e9d5ff;
+    opacity: 80%;
 }
 
 .maincontent {
@@ -166,23 +173,59 @@ button:hover {
 .icon {
     height: 25px;
     width: 25px;
-
 }
 
 .icon.home {
     background-image: url('images/home.svg');
 }
+.icon.profile {
+    background-image: url('images/profile.svg');
+}
+.icon.messages {
+    background-image: url('images/message.svg');
+}
+.icon.history {
+    background-image: url('images/history.svg');
+}
+.icon.tasks {
+    background-image: url('images/tasks.svg');
+}
+.icon.communities {
+    background-image: url('images/communities.svg');
+}
+.icon.settings {
+    background-image: url('images/settings.svg');
+}
+.icon.support {
+    background-image: url('images/support.svg');
+}
+.icon.privacy {
+    background-image: url('images/privacy.svg');
+}
+.icon.dashboard {
+    background-image: url('images/dashboard.svg');
+    height: 35px;
+    width: 35px;
+}
+
+/* fill="#FAF5FF" */
+
+
 
 .sidebar > .dashboard,
 .nav > * ,
 .help > * {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
     color: #faf5ff;
     font-weight: 700;
+    margin-left: 50px;
 }
 
+.sidebar > .dashboard {
+    /* font-weight: 800; */
+}
 
 
 
