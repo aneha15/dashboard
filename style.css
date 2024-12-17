@@ -3,10 +3,13 @@ html, body {
     padding: 0;
     box-sizing: border-box;
     font-size: 22px;
-    line-height: 1.4;
     font-family: "Poppins", serif;
     font-weight: 300;
     font-style: normal;
+}
+
+p {
+    line-height: 1.4;
 }
 
 .container {
@@ -15,7 +18,7 @@ html, body {
 }
 
 .header {
-    padding: 25px;
+    padding: 45px;
     grid-column: 2;
     display: grid;
     grid-template-rows: 1fr 2fr;
@@ -33,10 +36,6 @@ html, body {
     min-width: 250px;
 }
 
-h4 {
-    margin-bottom: 3px;
-}
-
 .sidebar > *:not(:nth-child(1)) {
     display: flex;
     flex-direction: column;
@@ -48,12 +47,36 @@ h4 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
+}
+
+.header .top .user {
+    color: #3b0764;
+    display: flex;
+    gap: 25px;
+    align-items: center;
 }
 
 .header > .bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.bottomleft {
+    color: #3b0764;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-weight: 600;
+}
+
+.bottomleft > .user-greeting > .greeting {
+    font-size: 16px;
+}
+
+.bottomleft > .user-greeting > .username {
+    font-size: 20px;
 }
 
 .header > .bottom > .buttons {
@@ -84,6 +107,7 @@ button:hover {
     gap: 25px;
     padding: 30px;
     background-color: #e9d5ff;
+    color: #3b0764;
 }
 
 .project-container {
@@ -147,6 +171,10 @@ button:hover {
 }
 
 .trending > p {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 19px;
     background-color: #faf5ff;
     margin: 0;
     padding: 16px;
@@ -214,12 +242,14 @@ button:hover {
 }
 .searchicon {
     background-image: url('images/search.svg');
-    height: 40px;
-    width: 40px;
+    height: 35px;
+    width: 35px;
 }
-/* fill="#FAF5FF" */
-
-
+.notifications{
+    background-image: url('images/notifications.svg');
+    height: 35px;
+    width: 35px;
+}
 
 .sidebar > .dashboard,
 .nav > * ,
@@ -229,8 +259,9 @@ button:hover {
     gap: 10px;
     color: #faf5ff;
     font-weight: 900;
-    margin-left: 50px;
+    padding-left: 35px;
 }
+
 
 
 
