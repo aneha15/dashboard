@@ -3,7 +3,10 @@ html, body {
     padding: 0;
     box-sizing: border-box;
     font-size: 22px;
-    line-height: 1.5;
+    line-height: 1.4;
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 .container {
@@ -27,22 +30,18 @@ html, body {
     padding-top: 25px;
     gap: 65px;
     background-color: #d8b4fe;
+    min-width: 250px;
 }
 
 h4 {
     margin-bottom: 3px;
 }
 
-/* .sidebar > * {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-} */
-
 .sidebar > *:not(:nth-child(1)) {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    cursor: pointer;
 }
 
 .header > .top {
@@ -95,7 +94,7 @@ button:hover {
 .project-container > .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 15px;
+    gap: 25px;
 }
 
 .project-container .cards > * {
@@ -106,6 +105,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    border-left: 12px solid #c4b5fd;
 }
 
 .project-container .cards  p {
@@ -113,17 +113,22 @@ button:hover {
 }
 
 .search {
+    display: flex;
+    align-items: center;
+    gap: 15px;
     width: 60%;
 }
 
 .search > input {
-    width: 100%;
+    width: 80%;
     height: 25px;
     border-radius: 10px;
     font-size: 18px;
-    background-color: #e9d5ff;
-    border: 2px solid #d8b4fe;
+    background-color: #c4b5fd;
+    opacity: 60%;
+    padding: 5px;
 }
+
 
 .announcements > .cards {
     background-color: #faf5ff;
@@ -133,8 +138,8 @@ button:hover {
 
 .announcements > .cards > div {
     font-size: 16px;
-    padding-bottom: 10px;
-    border-bottom: 2px solid lightblue;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #d8b4fe;
 }
 
 .announcements > .cards > div:last-child {
@@ -204,10 +209,14 @@ button:hover {
 }
 .icon.dashboard {
     background-image: url('images/dashboard.svg');
-    height: 35px;
-    width: 35px;
+    height: 45px;
+    width: 45px;
 }
-
+.searchicon {
+    background-image: url('images/search.svg');
+    height: 40px;
+    width: 40px;
+}
 /* fill="#FAF5FF" */
 
 
@@ -219,13 +228,10 @@ button:hover {
     align-items: center;
     gap: 10px;
     color: #faf5ff;
-    font-weight: 700;
+    font-weight: 900;
     margin-left: 50px;
 }
 
-.sidebar > .dashboard {
-    /* font-weight: 800; */
-}
 
 
 
